@@ -21,7 +21,7 @@ time();
 
 function time() {
   setTimeout(function () {
-    addAdd(getRandomInt(1, 10)); // time()
+    addAdd(getRandomInt(1, 10));  time()
   }, 1500);
 }
 
