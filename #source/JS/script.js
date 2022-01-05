@@ -8,7 +8,7 @@ if (document.documentElement.clientWidth < 480) {
 
 
 
-let url = '../IMG/03.jpeg'
+let url = '/IMG/03.jpeg'
 let z = 300
 
 let add = document.createElement('div')
@@ -47,60 +47,60 @@ function addAdd(int) {
 	switch (int) {
 		case 1:
 			text = 'КАК УВЕЛИЧИТЬ БИПКУ?? \n Всего одна капля этого народного средства...'
-			url = '../IMG/1.jpg'
+			url = '/IMG/1.jpg'
 			break;
 
 		case 2:
 			text = 'Богдан зашёл попариться в баню, \n но далее произошло необратимое...'
-			url = '../IMG/2.jpg'
+			url = '/IMG/2.jpg'
 
 			break;
 
 		case 3:
 			text = 'Предупреждение Влада Подмостовского для каждого поклонника Лерки...'
-			url = '../IMG/3.jpg'
+			url = '/IMG/3.jpg'
 
 			break;
 
 		case 4:
 			text = 'Отрёкся от геев, как теперь живёт красавец гей-кирилл?...'
-			url = '../IMG/4.jpg'
+			url = '/IMG/4.jpg'
 
 			break;
 
 		case 5:
 			text = 'Всем геям! Был выбран новый лидер бисексуалов...'
-			url = '../IMG/5.webp'
+			url = '/IMG/5.webp'
 
 			break;
 
 		case 6:
 			text = 'Болезнь очка Богдаши больше не скрыть. Вот почему Кирилл развёлся...'
-			url = '../IMG/6.jpg'
+			url = '/IMG/6.jpg'
 
 			break;
 
 		case 7:
 			text = 'Учёные предупредили: 28 декабря натуралам спрятаться будет негде...'
-			url = '../IMG/7.jpg'
+			url = '/IMG/7.jpg'
 
 			break;
 
 		case 8:
 			text = 'Не вытерпела: Почему Алеся сбежала из семьи?...'
-			url = '../IMG/8.jpg'
+			url = '/IMG/8.jpg'
 
 			break;
 
 		case 9:
 			text = 'Пророчество Себастьяна сбывается, это крах для Богдана...'
-			url = '../IMG/9.jpg'
+			url = '/IMG/9.jpg'
 
 			break;
 
 		case 10:
 			text = 'Сава - Жалкий пёс. Как теперь ворует самый знаменитый вор...'
-			url = '../IMG/10.jpg'
+			url = 'IMG/10.jpg'
 
 			break;
 	}

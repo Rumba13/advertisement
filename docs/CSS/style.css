@@ -247,8 +247,10 @@ p:hover {
   border: 1px solid #000;
   margin: 10px;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 img {
   background-repeat: no-repeat;
+  height: 100%;
 }
