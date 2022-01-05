@@ -169,7 +169,8 @@ p {
 	margin: 5px;
 	box-shadow: 10px 10px 20px #262626;
 	word-wrap: normal;
-	@include adaptive-fonts(50, 20);
+	@include adaptive-fonts(40, 20);
+	display: flex;
 }
 .cross {
 	position: absolute;
@@ -177,4 +178,13 @@ p {
 	right: 0;
 	margin: 2px;
 	cursor: pointer;
+}
+
+.image {
+	border: 1px solid #000;
+	margin: 10px;
+	background-repeat: no-repeat;
+}
+img {
+	background-repeat: no-repeat;
 }

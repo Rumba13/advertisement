@@ -48,7 +48,7 @@ function browserSync() {
 		server: {
 			baseDir: "./" + project_folder + "/"
 		},
-		port: 3002,
+		port: 3008,
 		notify: false,
 	})
 }

@@ -220,15 +220,18 @@ p:hover {
   -webkit-box-shadow: 10px 10px 20px #262626;
           box-shadow: 10px 10px 20px #262626;
   word-wrap: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (max-width: 1200px) {
   .add {
-    font-size: calc(20px + 51 * ((100vw - 320px) / 1280));
+    font-size: calc(20px + 34 * ((100vw - 320px) / 1280));
   }
 }
 @media (min-width: 480px) {
   .add {
-    font-size: calc(20px + 30 * (100vw / 1280));
+    font-size: calc(20px + 20 * (100vw / 1280));
   }
 }
 
@@ -238,4 +241,14 @@ p:hover {
   right: 0;
   margin: 2px;
   cursor: pointer;
+}
+
+.image {
+  border: 1px solid #000;
+  margin: 10px;
+  background-repeat: no-repeat;
+}
+
+img {
+  background-repeat: no-repeat;
 }
