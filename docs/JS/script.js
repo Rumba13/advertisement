@@ -9,7 +9,7 @@ if (document.documentElement.clientWidth < 480) {
 var url = 'IMG/03.jpeg';
 var z = 300;
 var add = document.createElement('div');
-var img = document.createElement('div');
+var img = document.createElement('div');    
 var Timg = document.createElement('img');
 document.addEventListener('click', function (e) {
   if (e.target.classList.contains('cross')) {
