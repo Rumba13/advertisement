@@ -27,7 +27,7 @@ time()
 function time() {
 	setTimeout(() => {
 		addAdd(getRandomInt(1, 10))
-		time()
+		// time()
 	}, 1500)
 }
 
@@ -113,9 +113,9 @@ function addAdd(int) {
 	img.prepend(Timg)
 	document.body.lastElementChild.prepend(add.cloneNode(true))
 	add.style.zIndex = z++;
-	add.style.top = getRandomInt(0, document.documentElement.clientHeight - 400 - 5) + 'px'
-	add.style.left = getRandomInt(0, document.documentElement.clientWidth - document.documentElement.clientWidth / 100 * 40 - 5) + 'px'
-
+	add.style.top = getRandomInt(0, document.documentElement.clientHeight - document.querySelector('.wrapper').firstElementChild.clientHeight - 5) + 'px'
+	add.style.left = getRandomInt(0, document.documentElement.clientWidth - document.querySelector('.wrapper').firstElementChild.clientWidth - 5) + 'px'
+	console.log(document.querySelector('.wrapper').firstElementChild.clientWidth);
 
 
 

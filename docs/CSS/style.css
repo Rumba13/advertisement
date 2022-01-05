@@ -223,15 +223,16 @@ p:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 300px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .add {
-    font-size: calc(20px + 34 * ((100vw - 320px) / 1280));
+    font-size: calc(18px + 37.4 * ((100vw - 320px) / 1280));
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 860px) {
   .add {
-    font-size: calc(20px + 20 * (100vw / 1280));
+    font-size: calc(18px + 22 * (100vw / 1280));
   }
 }
 

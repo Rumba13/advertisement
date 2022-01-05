@@ -2,10 +2,10 @@ $maxWidth: 1280;
 @mixin adaptive-fonts($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize * 0.7;
-	@media (max-width: 1200px) {
+	@media (max-width: 1440px) {
 		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
 	}
-	@media (min-width: 480px) {
+	@media (min-width: 860px) {
 		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
 	}
 }
@@ -169,8 +169,9 @@ p {
 	margin: 5px;
 	box-shadow: 10px 10px 20px #262626;
 	word-wrap: normal;
-	@include adaptive-fonts(40, 20);
+	@include adaptive-fonts(40, 18);
 	display: flex;
+	min-width: 300px;
 }
 .cross {
 	position: absolute;
