@@ -1,0 +1,180 @@
+$maxWidth: 1280;
+@mixin adaptive-fonts($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 1200px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+	@media (min-width: 480px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
+//    @include adaptive-fonts( , );
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+} /*Крестик в IE*/
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+img {
+	max-width: 100%;
+}
+body {
+	overflow: hidden;
+}
+html {
+	overflow: hidden;
+}
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.content {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: 5;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #000;
+	overflow: auto;
+	width: 50vw;
+	height: 50vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+p {
+	text-align: center;
+	border: 1px solid #000;
+	background-color: #262626;
+	transition: all 0.1s linear 0s;
+	&:hover {
+		background-color: #3d3d3d;
+	}
+}
+@keyframes addBlink {
+	0% {
+		border: 3px inset rgb(78, 4, 4);
+	}
+	10% {
+		border: 5px inset rgb(224, 145, 17);
+	}
+	20% {
+		border: 7px inset rgb(203, 224, 17);
+	}
+	30% {
+		border: 8px inset rgb(47, 231, 40);
+	}
+	40% {
+		border: 9px inset rgb(14, 226, 162);
+	}
+	50% {
+		border: 10px inset rgb(15, 144, 230);
+	}
+	60% {
+		border: 9px inset rgb(10, 86, 228);
+	}
+	70% {
+		border: 8px inset rgb(39, 17, 236);
+	}
+	80% {
+		border: 7px inset rgb(63, 10, 238);
+	}
+	90% {
+		border: 5px inset rgb(207, 17, 224);
+	}
+	100% {
+		border: 3px inset rgb(224, 17, 51);
+	}
+}
+.add {
+	border: 3px inset #000;
+	animation: addBlink linear infinite 1s;
+	width: 40vw;
+	height: auto;
+	position: absolute;
+	background-color: #fff;
+	padding: 0 auto;
+	margin: 5px;
+	box-shadow: 10px 10px 20px #262626;
+	word-wrap: normal;
+	@include adaptive-fonts(50, 20);
+}
+.cross {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 2px;
+	cursor: pointer;
+}

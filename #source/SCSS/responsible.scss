@@ -1,0 +1,24 @@
+@media (max-width: 1200px) {
+ .wrapper {
+      h1 {
+    font-size: 25px;
+  }
+  background-color: #FF0000;
+  max-width: 970px;
+ }
+}
+@media (max-width: 992px) {
+ .wrapper {
+  background-color: #FF9600;
+max-width: 750px;
+ }
+}
+@media (max-width: 707px) {
+ .wrapper {
+  background-color: #F6FF00;
+max-width: none;
+ }
+}
+img {
+  max-width: 100%;
+}
